@@ -1,0 +1,90 @@
+<div>
+<div style="height:80%;overflow:auto" class="col-lg-12">
+	<div class="well story1 col-lg-12" style="background:url('images/ride.jpg');background-size:100% 100%;height:100%; background-repeat:no-repeat;">
+		
+			<div class="col-lg-4" style="float:right">
+			<div class="well col-lg-12">
+				<img src="images/location.png" class="img-circle col-lg-3" height="20%" width="30%" style="padding:10px"/>
+				<div class="col-lg-9">
+				<h3>Ride With Us</h3>
+				<a ui-sref="app.sign_in"><h3 style="color:#37B38B">Sign In</h3></a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	<div class="well story2 col-lg-12">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-9">
+			<h2>Always The Ride You Want</h2>
+			<h3 class="myheader">The Best Way To Get Wherever </h3>
+			<h3 class="myheader">You are Going </h3>
+			</br></br>
+			<div class="col-lg-4" ng-repeat="obj in obj2">
+				<h3 >{{obj.header}}</h3>
+				<p>{{obj.para}}</p>
+			</div>
+						
+		</div>	
+	</div>
+	
+	<div class="well story1 col-lg-12">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-9">
+			<h2>There’s a ride for every price</h2>
+			<h3 class="myheader">And any occasion</h3>
+		</div>
+		<my-corousel object="corousel" arr="arr"></my-corousel>
+		
+		
+	</div>
+	
+	<div class="well story2 col-lg-12">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-4">
+			<h3 class="myheader">Pricing</h3>
+			<h2>Get a fare estimate</h2>
+			<input type="text" placeholder="Enter Pickup Location" id="pickup" class="searchbox col-lg-10"/></br></br></br></br>
+			<input type="text" placeholder="Enter Destination" id="drop" class="searchbox col-lg-10"/>
+		</div>
+		<div class="col-lg-4">
+			<img src="images/map.jpg" width="100%"/>
+		</div>
+	</div>
+	
+	<div class="well story2 col-lg-12" style="height:auto">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<h3 class="myheader">Safety</h3>
+			<h2>From start to finish, a ride you can trust</h2>
+			<h2 class="myh2">
+				Your safety is important to us before, during, 
+				and after every trip. That’s why we continue to develop technology that 
+				helps make millions of rides safer every day.
+			</h2>
+			
+		</div>
+		
+	</div>
+	
+	<div class="well story1 col-lg-12">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<h2>Your first MyTaxi is minutes away</h2>
+			
+			<div class="col-lg-4" ng-repeat="obj in obj1">
+				<img ng-src="{{obj.img}}" height="40%" width="60%"/>
+				<h4 class="myheader">{{obj.header}}</h4>
+				<h3>{{obj.subheader}}</h3>
+				<p style="font-size:15px">
+					{{obj.para}}
+				</p>
+			</div>
+						
+		</div>
+		
+	</div>
+	
+</div>

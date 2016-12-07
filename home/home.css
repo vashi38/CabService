@@ -1,0 +1,17 @@
+.story1{
+	background-color:white;
+	
+}
+h1,h2,h3{
+	font-family: monospace;
+}
+.myheader{
+	color:rgba(0, 0, 0, 0.38);
+}
+.display-story-wrapper:nth-child(odd) .display-story{
+	float:right;
+}
+
+.display-story-wrapper:nth-child(even) .display-story{
+	float:left;
+}
