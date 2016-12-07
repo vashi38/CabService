@@ -8,10 +8,8 @@ app.controller("rideController",function($scope,$state){
 		var drop = document.getElementById('drop');
 		var autocomplete = new google.maps.places.Autocomplete(drop);
 	}
-	google.maps.event.addDomListener(window, 'load', initialize_pickup);
-	google.maps.event.addDomListener(window, 'load', initialize_drop);
-	
-	
+	initialize_pickup();
+	initialize_drop();
 	 $scope.obj1=[
 				{
 					header:'Business Travel',

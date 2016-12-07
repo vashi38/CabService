@@ -1,7 +1,7 @@
 <div class="well col-lg-12 col-sm-12">
 	<b class=" col-lg-2 col-sm-12" ><a class="header" ui-sref="app.home" ng-click="li=0;">MyTaxi</a ></b>
 	<ul	 class="col-lg-7 col-sm-12">
-		<li class="list col-lg-1 col-sm-12" ng-class="{liactive:li==1}" ng-click="li=1" ui-sref="app.ride">Ride</li>
+		<li class="list col-lg-1 col-sm-12" ng-class="{liactive:li==1}" ng-click="li=1"><a ng-class="{linkactive:li==1}" class="sub-header" ui-sref='app.ride'>Ride</a></li>
 		<li class="list col-lg-1 col-sm-12" ng-class="{liactive:li==2}" ng-click="li=2"><a ng-class="{linkactive:li==2}" class="sub-header" ui-sref='app.drive'>Drive</a></li>
 	</ul>
 	<ul	 class="col-lg-3 col-sm-12">
