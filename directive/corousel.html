@@ -1,22 +1,19 @@
 <div class="col-lg-2"></div>
-<div class="col-lg-8">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="col-lg-12">
+	<div id="myCarousel" class="carousel slide col-lg-12" data-ride="carousel" >
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="{{i}}" ng-class="{'active':$index==0}" ng-repeat="i in arr"></li>
 		</ol>
 
 		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox" style="height:90%">
+		<div class="col-lg-7">
+		<div class="carousel-inner " role="listbox" style="height:90%">
 			<div class="item" ng-class="{'active':$index==0}" ng-repeat="obj in corousel">
-				<img ng-src="{{obj.img}}" alt="Chania" style="height:100%; width:100%">
-				<div class="carousel-caption">
-					<h3 >{{obj.header}}</h3>
-					<p >{{obj.data}}</p>
-				</div>
+				<img ng-src="{{obj.img}}" alt="Chania" class="col-lg-12" style="height:100%;">
+				
 			</div>
 		</div>
-
 		<!-- Left and right controls -->
 		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -26,5 +23,13 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
+		</div>
+		<div class="col-lg-5" >
+				<div  data-target="#myCarousel" ng-class="{'myactive':selected=={{$index}}}" ng-click="selected={{$index}}"  data-slide-to="{{$index}}" ng-repeat="obj in corousel" class="slider-selector ">
+					<h3 >{{obj.header}}</h3>
+					<p >{{obj.data}}</p>
+				</div>
+		</div>
+		
 	</div>
 </div>

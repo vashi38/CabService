@@ -15,3 +15,11 @@ h1,h2,h3{
 .display-story-wrapper:nth-child(even) .display-story{
 	float:left;
 }
+.slider-selector:hover{
+	background-color: #37B38B;
+	color:balck;
+}
+.myactive{
+	background-color: #37B38B;
+	color:balck;
+}
