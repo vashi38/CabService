@@ -63,13 +63,3 @@ app.controller("homeController",function($scope,$state){
 })
 
 
-app.directive("myCorousel",function(){
-	return{
-		restrict:'E',
-		scope:{
-			corousel:'=object',
-			arr:'=arr'
-		},
-		templateUrl:'directive/corousel.html'
-	}
-});
