@@ -315,6 +315,7 @@ if (typeof jQuery === 'undefined') {
   var Carousel = function (element, options) {
     this.$element    = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
+    this.$list = this.$element.find('.carousel-list')
     this.options     = options
     this.paused      = null
     this.sliding     = null
@@ -436,8 +437,14 @@ if (typeof jQuery === 'undefined') {
 
     if (this.$indicators.length) {
       this.$indicators.find('.active').removeClass('active')
-      var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
-      $nextIndicator && $nextIndicator.addClass('active')
+      this.$list.find('.myactive').removeClass('myactive')
+      
+	  var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
+      var $nextlist = $(this.$list.children()[this.getItemIndex($next)])
+      
+	  $nextIndicator && $nextIndicator.addClass('active')
+	  $nextlist && $nextlist.addClass('myactive')
+	  
     }
 
     var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"

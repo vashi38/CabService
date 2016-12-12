@@ -16,10 +16,10 @@ h1,h2,h3{
 	float:left;
 }
 .slider-selector:hover{
-	background-color: #37B38B;
+	background-color: rgba(55, 179, 139, 0.18);
 	color:balck;
 }
 .myactive{
-	background-color: #37B38B;
+	background-color: rgba(55, 179, 139, 0.18);
 	color:balck;
 }
