@@ -1,0 +1,19 @@
+
+<div class="flex  col-lg-12 container">
+  <div class=" input-form col-lg-4">
+    <input  type="text" placeholder="Enter Pickup Location"
+    ng-model="pickup" id="pickup" class="searchbox col-lg-12"/>
+    <div class="show-dotted col-lg-12">
+
+    </div>
+    <input type="text" placeholder="Enter Destination"
+    ng-model="drop" id="drop" class="searchbox col-lg-12"/>
+    <br><br>
+    <input type="button" name="" value="Submit" ng-click = "submit()">
+    <input type="button" name="" value="Get my Location" ng-click = "getLocation()">
+
+  </div>
+  <div class="col-lg-6">
+    <div id="googleMap" style=" height:400px"></div>
+  </div>
+</div>

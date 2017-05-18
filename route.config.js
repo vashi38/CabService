@@ -1,6 +1,6 @@
 var app=angular.module('myApp');
 app.config(function($stateProvider, $urlRouterProvider){
-	
+
 	$stateProvider.
 	state('app',{
 		url:'/',
@@ -27,13 +27,13 @@ app.config(function($stateProvider, $urlRouterProvider){
 		url:'ride',
 		templateUrl:'ride/ride.html',
 		controller:'rideController'
-		
+
 	})
 	.state('app.drive',{
 		url:'drive',
 		templateUrl:'drive/drive.html',
 		controller:'driveController'
-		
+
 	})
 	.state('app.help',{
 		url:'help',
@@ -43,9 +43,9 @@ app.config(function($stateProvider, $urlRouterProvider){
 	.state('app.sign_in',{
 		url:'sign_in',
 		templateUrl:'sign_in/sign_in.html'
-	})
-	
-	
+	});
+
+
 	 $urlRouterProvider.otherwise('home');
-	
+
 });

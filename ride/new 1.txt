@@ -1,0 +1,16 @@
+
+GDP-751 VO-136 U1 DATAFIX to remove duplicate locator .xlsx
+    2016-12-13 13:59 EET
+    15 kB
+
+$XXSVN_TOP/install/svn_install.sh VO-49 XXVAI_CST_REV_GOGS.sh 13751
+
+$XXSVN_TOP/install/svn_install.sh VO-49 XXVAI_CST_REV_GOGS.sh 13793
+
+$XXSVN_TOP/install/svn_install.sh GDP-781 DATAFIX DATAFIX_VO117_IEXP.sql 13791
+
+$XXSVN_TOP/install/svn_install.sh GDP-999 DATAFIX DATAFIX_VO131_CSI_REL_UPD.sql 13522
+
+$XXSVN_TOP/install/svn_install.sh VO51 XXVAI_INSTALL_V051.sh 13872
+
+$XXSVN_TOP/install/svn_install.sh VO-137 XXVAI_VO_137_INSTALL.sh 13896

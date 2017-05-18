@@ -2,42 +2,45 @@
 	<head>
 		<title>Angular App</title>
 	</head>
-	
+
 	<link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="header/header.scss"/>
 	<link rel="stylesheet" href="home/home.css"/>
 	<link rel="stylesheet" href="ride/ride.css"/>
-	
+	<link rel="stylesheet" href="directive/my_map_dir/photos.css"/>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs9vrgWs-z-cnorNqwf8MVF0Lzp12SUXI&libraries=places"></script>
+
 	<script src="angularjs/angular.js"></script>
 	<script src="angularjs/angular-ui-router.js"></script>
 	<script src="bootstrap/jquery.js"></script>
 	<script src="bootstrap/bootstrap/js/bootstrap.js"></script>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+
 
 	<script src="directive/angular.directive.js"></script>
+	<script src="directive/my_map_dir/directive.my_map.js"></script>
 	<script src="app.js"></script>
 	<script src="route.config.js"></script>
-	
-	
+
+
 	<script src="header/header.controller.js"></script>
-	
+
 	<script src="home/home.controller.js"></script>
-	
+
 	<script src="ride/ride.controller.js"></script>
-	
+
 	<script src="drive/drive.controller.js"></script>
 	<script src="help/help.controller.js"></script>
-	
+
 	<script src="sign_in/sign_in.controller.js"></script>
-	
-	
-	
-	
+
+
+
+
 	<body ng-app="myApp" >
 		<div ui-view='header' class="mydiv" ></div>
 		<div ui-view='main' class="mydiv" ></div>
 		<div ui-view='footer' class="mydiv" ></div>
-		
+
 	</body>
 </html>
